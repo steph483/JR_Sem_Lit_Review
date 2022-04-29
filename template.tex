@@ -1,4 +1,4 @@
-\documentclass[10pt,twocolumn]{article} 
+\documentclass[11pt,twocolumn]{article} 
 
 % required packages for Oxy Comps style
 \usepackage{oxycomps} % the main oxycomps style file
@@ -47,7 +47,12 @@ There are 69 official languages in Mexico and each of it’s 32 states has its o
  
 
 \section{Technical Background}
-There are hundreds of algorithms that work together to make Virtual Reality the immersion powerhouse it is today. There are some like the A* search algorithms that are meant for games that need pathfinding. However, since my project isn’t a game that needs these types of search algorithms, I decided to focus on algorithms that can help with reducing the amount of work I will have to do when making all the 3D assets necessary for the VR project. Since my project has a farm to table cooking aspect to it, that means I will have to create each type of plant that is necessary to make the desired recipe and while creating one version of the plant won’t be too hard, I want to showcase the chinampas that were used in the past and this includes a large amount of plants. I could duplicate the original plant I make but that would make the VR project less immersive and take away from the experience. This is where procedural generation comes into play. Procedural generation is when you use randomness to create piece of art or assets similar to a sample piece on which they are based \cite{buildproceduralgen2016}. An article titled, “Algorithms for procedural generation and display of trees” does a comparison between 3 different algorithms to see what use cases they are best for\cite{proceduralgen2019}. They do this comparison by having the algorithms build trees. The way procedural algorithms work in creating these models of trees is by simulating tree growth to a certain degree. They start with the main trunk and then create a split from which branches come out and, almost in a recursive pattern, the branches are created in the same manner as the tree trunk; they have their main body and then a split to smaller branches. If I were to proceed with this technique I would probably use a space colonisation algorithm. This is because although it takes a bit more time to build the tree than some of the other techniques it does a better job of making it look realistic than the others. This is because some of the algorithms like the Lindenmayer one creates the trees faster but they are meant to not be looked at in detail, like for quick world creation in the background. The space colonisation algorithm is separated into 2 stages. The first is about filling the model with attraction points that help the model create branches of the volexied model. Voxelized means that it is a discrete element with a 3D entity. As the iteration occurs, the model finds the attraction points to create a list and in that way create a branch. These types of algorithms can be implemented into Blender or Unity by affecting the mesh of a model (a mesh is the structural build of the 3D model) through the use of changing variable like length, depth,  number of splits and other things that can be seen in the following video.
+HUD: Although my project is not a game, it does require the usage of game design elements. One of them being the HUD (FULL NAME). This UI element allows the user to have easy see where they stand in the game, whether this means their literal position or their health/remaining track. While in traditional console, PC or mobile games the HUB is a constant interface that can be seen on the outer edges of the screen, in VR this is usually not the case. 
+
+Curve Screen: FIXME
+ 
+Hand tracking: FIXME
+
 
 
 \section{Prior Work}
